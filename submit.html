@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink & Insights - Submit</title>
+</head>
+<header>
+    <div id="header">
+        <div id="logo">
+            <img src="logo.png" alt="logo" width="300px">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="submit.html">Submit Review</a></li>
+                <li>
+                    <select name="language" id="languge">
+                        <option value="en">en</option>
+                        <option value="sp">sp</option>
+                        <option value="hn">hn</option>
+                    </select>
+                </li>
+            </ul>
+            <input type="text" id="searchbar" placeholder="Search Here">
+        </div>
+        <div id="account">
+            <div id="login">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <hr>
+    <div id="banner">
+        <center>
+            <h1>INKS & INSIGHT</h1>
+            <img src="slimBanner.png" alt="banner" width="50%">
+            <h2>Submit a Review!</h2>
+        </center>
+    </div>
+    <br>
+    <div id="submit">
+        <center>
+            <p>Fill in the details below to submit your review.</p>
+            <form method="get">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName">
+                <br>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName">
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+                <br>
+                <label for="bookTitle">Book Title: </label>
+                <input type="text" name="bookTitle">
+                <br>
+                <label for="author">Author: </label>
+                <input type="text" name="author">
+                <br>
+                <label for="rating">Rating (0-5): </label>
+                <input type="number" name="rating" min="0" max="5">
+                <br>
+                <label for="genre">Genre: </label>
+                <select name="genre" id="genre">
+                    <option value="science">Science</option>
+                    <option value="art">Art</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="history">History</option>
+                    <option value="history">Other</option>
+                </select>
+                <br>
+                <label for="review">Review: </label>
+                <textarea name="review" id="review"></textarea>
+                <br>
+                <label for="image">Image: </label>
+                <input type="file" name="image">
+                <br> <br>
+                <input type="submit">
+                <input type="reset">
+                <br>
+            </form>
+        </center>
+    </div>
+    <hr>
+</body>
+
+<footer>
+    <div id="navFooter">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="submit.html">Submit Review</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
